@@ -7,17 +7,25 @@
 			<title></title>
 		</head>
 		<body>
+		
+		<!--Top Navegation Starts -->
 		<nav class="top-nav">
 			<a href="#" class="brand-text ">Barbitas Club</a>
 			<ul class="top-nav-list">
 				<li><a href="#about">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
+		<!-- Top Navegation Ends -->
+
+		<!-- Title and CTI starts-->
 		<div class="full-screen-bg">
-			<h1>Join the Barbitas club.</h1>
+			<h1>Barbitas club.</h1>
 		</div>
+		<!-- Title and CTI ends-->
+
+		<!-- About starts-->
 		<h2 id="about">What is this about?</h2>
 		<div class="flex-row">
 			<div class="col-4-2-1">
@@ -41,7 +49,67 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore, iure maxime aliquid non doloremque error beatae! Facilis vitae quaerat aliquid non provident, excepturi at quidem sit, quae officiis iste.</p>
 			</div>
 		</div> <!-- flex-row --`>
+		<!-- About ends-->
 
+		<!-- Services Starts -->
+		<div class="container-services-bg">
+			<h2 id="services">Services</h2>
+			<div class="container-services">
+				<div>
+					<img src="images/jumping.jpg">
+				</div>
+				<div class="text-container-1">
+					<h3>Adopt</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore, iure maxime aliquid non doloremque error beatae! Facilis vitae quaerat aliquid non provident, excepturi at quidem sit, quae officiis iste.</p>
+				</div>
+			</div>
+
+			<div id="text-container-2" class="container-services">
+				<div>
+					<img src="images/service-2.jpeg">
+				</div>
+				<div>
+					<h3>Foster</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore, iure maxime aliquid non doloremque error beatae! Facilis vitae quaerat aliquid non provident, excepturi at quidem sit, quae officiis iste.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Services Ends -->
+		
+		<!-- Contact Starts -->
+	<section class="contact-bg ">
+    <div class="main-content">
+    	<h2 id="contact" class="contact">Interested? Contact Us</h2>
+        <form>
+            <label><span class="form-headers">Name</span>
+          <input type="text" name="name" placeholder="Type your name here">
+        </label>
+            <label><span class="form-headers">Email</span>
+          <input type="text" name="email" placeholder="Type your email">
+        </label>
+            <label><span class="form-headers">Subject</span>
+          <input type="text" name="subject" placeholder="Type Subject">
+        </label>
+            <label><span class="form-headers">Message</span>
+          <textarea name="message" placeholder="Type your message"></textarea>
+        </label>
+            <div class="subscribe-a">
+                <label><span class="form-headers">Would you like to subscribe to my newsletter?</span>
+                    <input  type="radio" name="subscribe" value="yes"><span class="form-headers"> Yes </span>
+                </label>
+                <label>
+                    <input type="radio" name="subscribe" value="no"><span class="form-headers"> No </span>
+          </label>
+            </div>
+            <div class="button-container">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    </section>
+    
+		<!-- Contact Ends -->
+	
 		<!-- Load js at the bottom of the body -->
 			<script type="text/javascript" src="js/script.js"></script>
 		</body>

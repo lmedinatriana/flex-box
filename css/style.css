@@ -100,13 +100,17 @@ p {
 	font-family: 'Righteous', cursive;
 	font-size: 40px;
 	color: white;
-	transition: background-image .5s;
 	text-align: center;
 }
+
+
 
 .flex-row {
 	display: flex;
 	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+
 }
 
 .col-4-2-1 {
@@ -132,6 +136,10 @@ p {
 	.col-4-2-1 {
 		width: 30%;
 	}
+	.container-services {
+		flex-wrap: wrap;
+	}
+
 }
 
 @media (max-width: 992px) {
@@ -141,6 +149,8 @@ p {
 	.col-4-2-1 {
 		width: 48%;
 	}
+	.text-container {
+		width: 80%;	}
 }
 
 @media (max-width: 600px) {
@@ -154,6 +164,164 @@ p {
 	.col-4-2-1 {
 		width: 98%;
 	}
+}
+
+/*Services*/
+
+.container-services-bg {
+	display: block;
+	background-color: #A09BE7;
+	color: white;
+}
+
+.container-services {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+
+}
+
+.container-services img {
+	margin: 0px 10px;
+	padding: 10px;
+}
+
+.container-services h3 {
+	color: white;
+}
+
+#text-container-2 {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+/* CONTACT STYLE
+===============================================================================*/
+
+.contact-bg {
+	background-image: url("../images/contact.jpeg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.contact {
+	color: #FFF;
+}
+
+.main-content {
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-content form {
+    width: 700px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+	overflow: hidden;
+
+}
+
+@media (max-width: 400px) {
+    .main-content form {
+        width: 100%;
+    }
+}
+
+.main-content h2 {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form {
+    background: #5F00BA;
+    opacity: .7;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    padding: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+input::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    opacity: .4;
+}
+
+textarea {
+    margin: 10px 0px;
+    padding: 10px;
+    float: left;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: none;
+    max-height: 100%;
+    max-width: 100%; 
+}
+
+textarea::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    opacity: .4;
+}
+
+.subscribe-a label {
+    display: inline;
+}
+
+.subscribe-a input {
+    width: auto;
+}
+
+
+.form-headers {
+    margin:10px 0px;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: right;
+    color: #fff;
+}
+
+button {
+    border-radius: 8px;
+    background-color: #A09BE7;
+    /* Green */
+    border: none;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+}
+
+button:hover {
+    /* Hover over "No space in bet a:hover" */
+    padding: 10px;
+    background-color: #FF5A5F;
+    color: white;
 }
 
 
